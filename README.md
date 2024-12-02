@@ -1,101 +1,180 @@
+## Welcome
 
-# Quickstart for Creating a GitHub Repository
+<p>
+  <img src="https://k3-production-bucket.s3.amazonaws.com/uploads/ZuF4WKfiXWD9P3Cme_cosmo-greeting.svg" alt="Cosmo" width="160" style="float: right; margin-left: 10px;">
+  Welcome to the <strong>Git Cheatsheet Repository</strong>. This repository is created to support the <strong>Git Version Control for Beginners</strong> CodeSignal Course Path, designed to help learners master Git fundamentals and advanced workflows.
+</p>
 
-This guide will help you quickly create and set up a repository on GitHub and connect it to a local repository on your computer.
+## About CodeSignal
 
----
+**CodeSignal** is a leading platform for technical skill assessment and development. It offers a variety of courses, challenges, and learning paths that help individuals improve their technical skills across domains like programming, DevOps, and data science. 
 
-## Step 1: Create a New Repository on GitHub
+The **Git Course Path** focuses on building practical knowledge of Git for real-world software development. The course covers a variety of topics, starting from basic Git commands to mastering working with remote repositories. 
 
-1. **Go to GitHub**:
-   - Navigate to [https://github.com/](https://github.com/) and sign in.
+For more information about this course, visit this [link](#). 
 
-2. **Start a New Repository**:
-   - In the upper-right corner of any GitHub page, click **+**, and then click **New repository**.
-   - Alternatively, you can go to [https://github.com/new](https://github.com/new).
 
-3. **Name Your Repository**:
-   - Enter a name for your repository (e.g., `my-new-repo`).
-   - Optionally, add a description.
+## About This Repository
 
-4. **Choose Visibility**:
-   - Select **Public** if you want the repository to be visible to everyone, or **Private** to restrict access to yourself and collaborators.
+This repository is your **companion to the Git Course Path** and serves as a quick reference for essential Git commands. It's designed to help you:
+- Quickly recall **frequently used commands**.
+- Reinforce your learning through a **structured cheatsheet**.
 
-5. **Skip Initializing Options** (Optional):
-   - For this example, we’ll skip adding a README file, `.gitignore`, or license. (You can add these files later from your local machine or GitHub.)
-
-6. **Create Repository**:
-   - Click **Create repository** to generate the repository on GitHub. You’ll be taken to the new repository’s page.
+Whether you're starting with Git or looking to solidify your knowledge, this cheatsheet provides an organized view of the most important commands.
 
 ---
 
-## Step 2: Set Up the Local Repository
-
-### If You’re Starting from Scratch
-
-1. **Open Your Terminal**:
-   - On your computer, open a terminal (or command prompt).
-
-2. **Create a New Folder** (if you don’t have one already):
-   ```bash
-   mkdir my-new-repo
-   cd my-new-repo
-   ```
-
-3. **Initialize Git**:
-   - Set up Git for version control in your folder by running:
-   ```bash
-   git init
-   ```
-
-4. **Add a README (Optional)**:
-   - Create a README file to describe your project:
-   ```bash
-   echo "# My New Repo" > README.md
-   ```
-
-5. **Stage and Commit Files**:
-   - Stage and commit your files:
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   ```
+## Table of Contents
+- [Getting Started with Git](#getting-started-with-git)
+- [Tracking and Managing Changes](#tracking-and-managing-changes)
+- [Branching and Collaboration](#branching-and-collaboration)
+- [Undoing and Modifying Changes](#undoing-and-modifying-changes)
+- [Exploring and Comparing](#exploring-and-comparing)
+- [Ignoring Files](#ignoring-files)
+- [Stashing Changes](#stashing-changes)
 
 ---
 
-## Step 3: Connect Your Local Repository to GitHub
+## Getting Started with Git
 
-1. **Copy the Repository URL**:
-   - On your GitHub repository page, you’ll see a **Quick setup** section with the repository URL (it looks like `https://github.com/username/my-new-repo.git`). Copy this URL.
+### Setting Up Your Environment
 
-2. **Add the Remote Origin**:
-   - In your terminal, link your local repository to GitHub:
-   ```bash
-   git remote add origin <your-repository-url>
-   ```
-   Replace `<your-repository-url>` with the URL you copied.
+These commands configure your identity and preferences:
 
-3. **Push Your Local Repository to GitHub**:
-   - To upload your code to GitHub for the first time, use:
-   ```bash
-   git push -u origin main
-   ```
+- `git config --global user.name "[Your Name]"`  
+  Set your username for commits.
+- `git config --global user.email "[Your Email]"`  
+  Set your email address for commits.
+- `git config --list`  
+  Display your current Git configuration.
 
----
-
-## Step 4: Verify and Manage Your Repository
-
-- **Check GitHub**:
-  - Go back to your repository page on GitHub and refresh to see your files.
-
-- **Future Changes**:
-  - After making changes to your files locally, use the following commands to push updates to GitHub:
-    ```bash
-    git add .
-    git commit -m "Describe your changes"
-    git push
-    ```
+### Starting a Repository
+- `git init`  
+  Turn a folder into a Git repository.
+- `git clone [url]`  
+  Copy an existing repository to your local machine.
 
 ---
 
-You’ve now successfully created a GitHub repository and linked it to your local project! For more details, refer to [GitHub’s official documentation](https://docs.github.com/).
+## Tracking and Managing Changes
+
+### Staging and Committing Changes
+
+Prepare and save your changes with these commands:
+
+- `git status`  
+  View the status of your working directory and staged files.
+- `git add [file]`  
+  Stage specific changes.
+- `git add .`  
+  Stage all changes in the current directory.
+- `git commit -m "[message]"`  
+  Create a commit with a message describing the changes.
+- `git commit --amend`  
+  Modify the most recent commit (e.g., to fix a message).
+
+### Removing or Unstaging Changes
+- `git restore [file]`  
+  Discard changes in a file (unstaged).
+- `git restore --staged [file]`  
+  Unstage changes while keeping them in your working directory.
+
+---
+
+## Branching and Collaboration
+
+### Working with Branches
+
+Branches allow parallel development:
+- `git branch`  
+  List all branches.
+- `git branch [branch-name]`  
+  Create a new branch.
+- `git switch [branch-name]`  
+  Switch to a different branch.
+- `git branch -d [branch-name]`  
+  Delete a branch.
+
+### Pushing and Pulling Changes
+
+Collaborate with others using remote repositories:
+- `git remote add origin [url]`  
+  Add a remote repository to your project.
+- `git push -u origin [branch-name]`  
+  Push changes to a remote branch and track it.
+- `git fetch origin`  
+  Download updates from the remote repository without merging them into your current branch.
+- `git pull origin [branch-name]`  
+  Fetch and merge changes from a remote branch.
+
+---
+
+## Undoing and Modifying Changes
+
+### Reverting or Resetting Commits
+
+These commands help you modify commit history carefully:
+- `git revert [commit-hash]`  
+  Create a new commit that undoes changes from a specific commit.
+- `git reset --soft [commit]`  
+  Move the HEAD pointer but keep staged changes.
+- `git reset --hard [commit]`  
+  Undo commits and discard all uncommitted changes.
+
+---
+
+## Exploring and Comparing
+
+### Viewing Logs and Diffs
+
+Understand what has changed with these commands:
+
+- `git log --oneline`  
+  Display a compact commit history.
+
+- `git diff`  
+  Compare unstaged changes with the most recent commit.
+
+- `git diff [branch-name]`  
+  Compare your current branch with another branch.
+
+- `git diff commit1..commit2`  
+  Compare changes between two commits.
+
+- `git diff branch1..branch2`  
+  Compare the differences between two branches.
+
+- `git show [commit-hash]`  
+  Show the details of a specific commit.
+
+---
+
+## Ignoring Files
+
+### Using `.gitignore`
+
+Control which files Git should ignore:
+- Save patterns in `.gitignore`:
+  ```plaintext
+  # Ignore compiled files
+  *.o
+  *.class
+  ```
+  
+---
+
+## Stashing Changes
+
+### Temporarily Saving Progress
+
+Stash allows you to save your changes without committing:
+- `git stash`  
+  Temporarily store your uncommitted changes.
+- `git stash apply`  
+  Apply the most recent stash without removing it.
+- `git stash drop`  
+  Delete the most recent stash.
+- `git stash clear`  
+  Remove all stashes from your repository.
+
+---
