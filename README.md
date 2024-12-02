@@ -1,8 +1,7 @@
 ## Welcome
 
 <p>
-  <img src="https://k3-production-bucket.s3.amazonaws.com/uploads/ZuF4WKfiXWD9P3Cme_cosmo-greeting.svg" alt="Cosmo" width="160" style="float: right; margin-left: 10px;">
-  Welcome to the <strong>Git Cheatsheet Repository</strong>. This repository is created to support the <strong>Git Version Control for Beginners</strong> CodeSignal Course Path, designed to help learners master Git fundamentals and advanced workflows.
+  Welcome to the <strong>Git Cheatsheet Repository</strong>. This repository is created to support the <strong>Git Version Control for Beginners</strong> CodeSignal Course Path, designed to help learners master Git fundamentals and advanced workflows. <img src="https://k3-production-bucket.s3.amazonaws.com/uploads/ZuF4WKfiXWD9P3Cme_cosmo-greeting.svg" alt="Cosmo" width="160" style="float: right; margin-left: 10px;">
 </p>
 
 ## About CodeSignal
