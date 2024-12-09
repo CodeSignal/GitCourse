@@ -1,25 +1,26 @@
 ## Welcome
 
 <p>
-  Welcome to the <strong>Git Cheatsheet Repository</strong>. This repository is created to support the <strong>Git Version Control for Beginners</strong> CodeSignal Course Path, designed to help learners master Git fundamentals and advanced workflows. <img src="https://k3-production-bucket.s3.amazonaws.com/uploads/ZuF4WKfiXWD9P3Cme_cosmo-greeting.svg" alt="Cosmo" width="160" style="float: right; margin-left: 10px;">
+  Welcome to the <strong>Git Cheat sheet Repository</strong>. This repository is created to support the <strong>Git Version Control for Beginners</strong> CodeSignal Course Path, designed to help learners master Git fundamentals and advanced workflows. <img src="https://k3-production-bucket.s3.amazonaws.com/uploads/ZuF4WKfiXWD9P3Cme_cosmo-greeting.svg" alt="Cosmo" width="160" style="float: right; margin-left: 10px;">
 </p>
 
 ## About CodeSignal
 
-**CodeSignal** is a leading platform for technical skill assessment and development. It offers a variety of courses, challenges, and learning paths that help individuals improve their technical skills across domains like programming, DevOps, and data science. 
+**CodeSignal Learn** is a platform for skill assessment and development. It offers a variety of courses, challenges, and learning paths that help individuals improve their technical skills in areas like programming and data science, enhance soft skills and sales expertise, and prepare effectively for interviews.
 
-The **Git Course Path** focuses on building practical knowledge of Git for real-world software development. The course covers a variety of topics, starting from basic Git commands to mastering working with remote repositories. 
+The **Git Version Control for Beginners** course path focuses on building practical knowledge of Git for real-world software development. The course path covers a variety of topics, starting from basic Git commands to mastering working with remote repositories. 
 
-For more information about this course, visit this [link](#). 
+For more information about this course path, visit this [link](#). 
 
 
 ## About This Repository
 
 This repository is your **companion to the Git Course Path** and serves as a quick reference for essential Git commands. It's designed to help you:
 - Quickly recall **frequently used commands**.
-- Reinforce your learning through a **structured cheatsheet**.
+- Reinforce your learning through a **structured cheat sheet**.
 
-Whether you're starting with Git or looking to solidify your knowledge, this cheatsheet provides an organized view of the most important commands.
+Whether you're starting with Git or looking to 
+solidify your knowledge, this cheat sheet provides an organized view of the most important commands.
 
 ---
 
