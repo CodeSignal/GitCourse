@@ -88,25 +88,50 @@ Prepare and save your changes with these commands:
 Branches allow parallel development:
 - `git branch`  
   List all branches.
+- `git branch -r`  
+  List all remote branches.
 - `git branch [branch-name]`  
   Create a new branch.
 - `git switch [branch-name]`  
   Switch to a different branch.
+- `git checkout [branch-name]`  
+  Switch to a specific branch.  
+- `git checkout -b [branch-name]`  
+  Create a new branch and switch to it in one step.
+- `git switch -c [branch-name]`  
+  Create a new branch and switch to it.
 - `git branch -d [branch-name]`  
   Delete a branch.
+- `git branch -D [branch-name]`  
+  Force delete a branch.
+- `git branch -m [new-branch-name]`  
+  Rename the current branch.
 
+### Merging and Applying Changes
+Combine changes from branches or commits into your current branch to integrate updates.
+- `git cherry-pick [commit-hash]`  
+  Apply changes from a specific commit to the current branch.
+- `git merge [branch-name]`  
+  Merge the specified branch into the current branch.
+- `git rebase [branch-name]`  
+  Reapply commits from the current branch onto the specified branch to maintain a linear history.
+- `git rebase --continue`  
+  Resume an interrupted rebase after resolving conflicts.
+- `git rebase -i HEAD~N`  
+  Start an interactive rebase for the last N commits, allowing you to edit, reorder, squash, or drop commits.
 ### Pushing and Pulling Changes
 
 Collaborate with others using remote repositories:
 - `git remote add origin [url]`  
   Add a remote repository to your project.
+- `git push origin [branch-name]`  
+  Push local changes from the specified branch to a remote repository.
 - `git push -u origin [branch-name]`  
   Push changes to a remote branch and track it.
 - `git fetch origin`  
   Download updates from the remote repository without merging them into your current branch.
 - `git pull origin [branch-name]`  
   Fetch and merge changes from a remote branch.
-
 ---
 
 ## Undoing and Modifying Changes
@@ -123,29 +148,54 @@ These commands help you modify commit history carefully:
 
 ---
 
-## Exploring and Comparing
+## **Exploring and Comparing**
 
-### Viewing Logs and Diffs
+### **Viewing Logs and Diffs**
 
-Understand what has changed with these commands:
+Understand and analyze changes in your repository with these commands:
 
 - `git log --oneline`  
-  Display a compact commit history.
+  Display a compact commit history.  
 
 - `git diff`  
-  Compare unstaged changes with the most recent commit.
+  Compare unstaged changes with the most recent commit.  
 
 - `git diff [branch-name]`  
-  Compare your current branch with another branch.
+  Compare your current branch with another branch.  
 
 - `git diff commit1..commit2`  
-  Compare changes between two commits.
+  Compare changes between two commits.  
 
 - `git diff branch1..branch2`  
-  Compare the differences between two branches.
+  Compare the differences between two branches.  
+
+- `git diff --staged`  
+  Show differences between staged changes and the last commit.  
+
+- `git diff --cached`  
+  Show differences between staged changes and the last commit (same as `--staged`).  
 
 - `git show [commit-hash]`  
-  Show the details of a specific commit.
+  Show the details of a specific commit.  
+
+- `git reflog`  
+  Show a log of all reference updates (e.g., branch checkouts, commits, resets, and rebases).
+
+### **Working with Tags**
+
+Use tags to mark important commits:
+
+- `git tag [tag-name]`  
+  Create a lightweight tag for the current commit.  
+
+- `git tag -l`  
+  List all tags in the repository.  
+
+- `git tag -a [tag-name] -m "[message]"`  
+  Create an annotated tag with a message for the current commit.  
+
+- `git tag -d [tag-name]`  
+  Delete a tag locally.  
 
 ---
 
@@ -176,5 +226,8 @@ Stash allows you to save your changes without committing:
   Delete the most recent stash.
 - `git stash clear`  
   Remove all stashes from your repository.
-
+- `git stash -u`  
+  Stash tracked and untracked changes.  
+- `git stash list`  
+  Show saved stashes.
 ---
