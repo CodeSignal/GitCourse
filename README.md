@@ -10,7 +10,7 @@
 
 The **Git Version Control for Beginners** course path focuses on building practical knowledge of Git for real-world software development. The course path covers a variety of topics, starting from basic Git commands to mastering working with remote repositories. 
 
-For more information about this course path, visit this [link](#). 
+For more information about this course path, visit this [link](https://learn.codesignal.com/preview/course-paths/140). 
 
 
 ## About This Repository
